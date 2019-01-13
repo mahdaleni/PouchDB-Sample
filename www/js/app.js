@@ -60,7 +60,7 @@ document.addEventListener('deviceready', function () {
     }  
     
     // Create or open the remote database to sync to - requires you to start up the PouchDB server 1st (see readme) 
-    myApp.remoteDB = new PouchDB("http://localhost:5984/myTodoList");
+    myApp.remoteDB = new PouchDB("http://127.0.0.1:5984/data_caleg");
     
     // Make a call to get the info on each db 
     myApp.db.info().then(function (info) {
