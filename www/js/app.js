@@ -20,7 +20,7 @@ document.addEventListener('init', function(event) {
 document.addEventListener('deviceready', function () {
     console.log("Device ready event fired ");
     myApp.isOnline = navigator.onLine; // browser flag for checking connection (may not always work)
-    var dbName = 'my_todos.db';        // use a different local name for each to test multiple concurrent browsers
+    var dbName = 'data_caleg.db';        // use a different local name for each to test multiple concurrent browsers
 
     // Check if running on mobile device or in mobile simulator mode...
     if (ons.platform.isIOS() || ons.platform.isAndroid()) {        
